@@ -1,27 +1,18 @@
 # AuthFront
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.2.7.
+Tela de login desenvolvida no estudo de Angular com base nos ensinamentos e inspirações de [Dener Troquatte](https://vidafullstack.com.br/instrucoes-para-o-curso/) no [Curso de Angular 2 (v14+) Typescript do Básico ao Avançado](https://udemy.com/course/curso-de-angular/).
 
-## Development server
+## Rodando a aplicação
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+É necessário instalar as dependências do projeto `npm install` e rodar a aplicação `ng serve`.
+Além disso, é imprescindível que o servidor fake jwt seja clonado através deste [link](https://github.com/troquatte/curso-de-angular-fake-jwt) e executado `npm run start`.
 
-## Code scaffolding
+## Principais funcionalidades
+- Barreira de login por usuário e senha
+- Rejeitar usuário ou senha errados com mensagem na tela
+- Redirecionar para uma página admin caso o login seja feito corretamente
+- Impedir o acesso direto à página admin sem um token válido
+- Comunicação com api fake jwt
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+## Funcionalidades a serem criadas
+- Criar página de cadastro para salvar as informações no servidor
